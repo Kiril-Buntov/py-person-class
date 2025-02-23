@@ -15,5 +15,4 @@ def create_person_list(person_dicts: list) -> list:
             person.wife = Person.people.get(d["wife"])
         elif "husband" in d and d["husband"]:
             person.husband = Person.people.get(d["husband"])
-    print(Person.people)
     return persons
